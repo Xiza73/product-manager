@@ -10,7 +10,6 @@ export const App = () => {
 
   useEffect(() => {
     const productsLS = localStorage.getItem("products");
-    console.log(productsLS);
     if (productsLS) {
       setProducts(JSON.parse(productsLS));
     }
